@@ -1,0 +1,22 @@
+/*=========== Button CSS ==========*/
+
+.boxed-btn {
+    padding: 0px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    height: 45px;
+    line-height: 41px;
+    font-family: "Myriad Pro", sans-serif;
+    @extend %basetransition2;
+    @extend %primary-bg-color;
+    @extend %posrelative;
+    @extend %white-color;
+    @extend %textcenter;
+    &:hover {
+        @extend %primary-color;
+        @extend %primary-border-color;
+        background: transparent;
+    }
+}

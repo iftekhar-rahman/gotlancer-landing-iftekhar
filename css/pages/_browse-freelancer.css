@@ -1,0 +1,21 @@
+.project-tab-content-area.browse-freelancer-section .single-proposal-item.browse-project-item .proposal-content .user-detail h3 .user-mode {
+  margin-left: 7px; }
+  .project-tab-content-area.browse-freelancer-section .single-proposal-item.browse-project-item .proposal-content .user-detail h3 .user-mode i {
+    font-size: 16px; }
+
+.project-tab-content-area.browse-freelancer-section .single-proposal-item.browse-project-item .proposal-content .user-detail .user-title h4 {
+  color: #6FB556;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 25px;
+  margin: 4px 0 0 8px; }
+  .project-tab-content-area.browse-freelancer-section .single-proposal-item.browse-project-item .proposal-content .user-detail .user-title h4 i {
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: -2px; }
+
+.project-tab-content-area.browse-freelancer-section .single-proposal-item .proposal-content .user-detail h3 {
+  color: red; }

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Landing page</title>
+        
+        <!--Libraries-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <!-- fonts -->
+        <link href="./webfonts/typo-fonts/fonts.css" rel="stylesheet">
+
+        <!--Plugins-->
+        <link href="css/aos.css" rel="stylesheet">
+        <link href="css/slick.css" rel="stylesheet">
+        <link href="css/nice-select.css" rel="stylesheet">
+        <link href="css/perfect-scrollbar.min.css" rel="stylesheet">
+
+        <!--Theme specific styles-->
+        <link href="css/style.css" rel="stylesheet">
+        
+        <!--Core jQuery-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <body>
+
+        <div class="overlay"></div>
+
+        <!-- visible only below 991px viewports | small-devices-header starts -->
+        <div class="small-devices-header d-block d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo d-flex align-items-center">
+                            <a href="#"><img src="img/logo.svg" alt="Gotlancer"></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mobile-menu-trigger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- small-devices-header ends -->
+
+        <!-- header-area starts -->
+        <div class="header">
+            <div class="header-area">
+                <div class="mobile-menu-close-trigger d-block d-lg-none">
+                    <span class="bar-1"></span>
+                    <span class="bar-2"></span>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 d-flex flex-wrap flex-lg-nowrap">
+                            <div class="site-logo d-flex align-items-center order-0">
+                                <a href="#"><img src="img/logo.svg" alt="Gotlancer"></a>
+                            </div>
+                            <div class="mainmenu order-2 order-lg-1">
+                                <ul>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">Hire</a></li>
+                                    <li><a href="#">How its works</a></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-search-box position-relative order-1 order-lg-2">
+                                <button id="search-box-trigger" class="search-box-trigger" type="button">
+                                    <i class="fas fa-search"></i> Search <span class="angle-icon">
+                                    <i class="fas fa-angle-down"></i></span>
+                                </button>
+                                <div id="search-box-wrapper" class="search-dropdown">
+                                    <div class="dropdown-header">
+                                        Buyers can
+                                    </div>
+                                    <div class="search-dropdown-item offers">
+                                        <a href="https://www.google.com/">Search <span class="standout">offers</span> <span class="helper">to buy now</span></a>
+                                    </div>
+                                    <div class="search-dropdown-item freelancers">
+                                        <a href="https://www.google.com/">Search <span class="standout">freelancers</span> <span class="helper">to request a proposal</span></a>
+                                    </div>
+                                    <div class="dropdown-header">
+                                        Freelancers can
+                                    </div>
+                                    <div class="search-dropdown-item projects">
+                                        <a href="https://www.google.com/">Search <span class="standout">projects</span> <span class="helper">to quote on</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="signing-section text-right">
+                                <a href="#">Sign in</a>
+                                <a href="#">Sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header-area ends -->
+
+        <!-- hero-area starts -->
+        <div class="hero-area position-relative overflow-hidden">
+            <div class="animated-shape shape-1" data-aos="fade-up">
+                <img src="img/square-shape.png" alt="">
+            </div>
+            <div class="animated-shape shape-2" data-aos="fade-down">
+                <img src="img/square-shape.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="animated-shape shape-3" data-aos="fade-left">
+                            <img src="img/round-shape.png" alt="">
+                        </div>
+                        <div class="hero-content">
+                            <h2>Find expert talent for<br/> your project</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi</p>
+                            <a href="#" class="boxed-btn">Post a project now</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="hero-slider">
+                            <div class="slider">
+                                <div class="item">
+                                    <div class="single-slide-item text-center">
+                                        <img src="img/freelancer-1.png" alt="">
+                                        <h4 class="name">Apurba Das <span><img src="img/check.png" alt=""></span></h4><br/>
+                                        <h5><i class="fas fa-star"></i> Top rated</h5><br/>
+                                        <h4>Back-end Developer</h4>
+                                        <div class="skills-list">
+                                            <span>Laravel</span>
+                                            <span>MySQL</span>
+                                            <span>PHP</span>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="ratings">
+                                                4.5
+                                            </div>
+                                            <div class="stars">
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                            </div>
+                                            <div class="project-number">
+                                                (3K)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="single-slide-item text-center">
+                                        <img src="img/freelancer-1.png" alt="">
+                                        <h4 class="name">Apurba Das <span><img src="img/check.png" alt=""></span></h4><br/>
+                                        <h5><i class="fas fa-star"></i> Top rated</h5><br/>
+                                        <h4>Back-end Developer</h4>
+                                        <div class="skills-list">
+                                            <span>Laravel</span>
+                                            <span>MySQL</span>
+                                            <span>PHP</span>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="ratings">
+                                                4.5
+                                            </div>
+                                            <div class="stars">
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                            </div>
+                                            <div class="project-number">
+                                                (3K)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="single-slide-item text-center">
+                                        <img src="img/freelancer-1.png" alt="">
+                                        <h4 class="name">Apurba Das <span><img src="img/check.png" alt=""></span></h4><br/>
+                                        <h5><i class="fas fa-star"></i> Top rated</h5><br/>
+                                        <h4>Back-end Developer</h4>
+                                        <div class="skills-list">
+                                            <span>Laravel</span>
+                                            <span>MySQL</span>
+                                            <span>PHP</span>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="ratings">
+                                                4.5
+                                            </div>
+                                            <div class="stars">
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                            </div>
+                                            <div class="project-number">
+                                                (3K)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="single-slide-item text-center">
+                                        <img src="img/freelancer-1.png" alt="">
+                                        <h4 class="name">Apurba Das <span><img src="img/check.png" alt=""></span></h4><br/>
+                                        <h5><i class="fas fa-star"></i> Top rated</h5><br/>
+                                        <h4>Back-end Developer</h4>
+                                        <div class="skills-list">
+                                            <span>Laravel</span>
+                                            <span>MySQL</span>
+                                            <span>PHP</span>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="ratings">
+                                                4.5
+                                            </div>
+                                            <div class="stars">
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                            </div>
+                                            <div class="project-number">
+                                                (3K)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hero-area ends -->
+
+        <!-- brand-area starts -->
+        <div class="brand-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="brands d-flex flex-wrap flex-lg-nowrap justify-content-center justify-content-md-between align-items-center">
+                            <div class="single-brand-item title">
+                                <h4>2000+ business<br> Trust us</h4>
+                            </div>
+                            <div class="single-brand-item brand-1">
+                                <img src="img/brand-log-1.png" alt="">
+                            </div>
+                            <div class="single-brand-item brand-2">
+                                <img src="img/brand-log-2.png" alt="">
+                            </div>
+                            <div class="single-brand-item brand-3">
+                                <img src="img/brand-log-3.png" alt="">
+                            </div>
+                            <div class="single-brand-item brand-4">
+                                <img src="img/brand-log-4.png" alt="">
+                            </div>
+                            <div class="single-brand-item brand-5">
+                                <img src="img/brand-log-5.png" alt="">
+                            </div>
+                            <div class="single-brand-item brand-6">
+                                <img src="img/brand-log-6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- brand-area ends -->
+
+        <!-- services-category-area starts -->
+        <div class="services-category-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-title text-center" data-aos="fade-up">
+                            <h2>Explore by category</h2>
+                            <h4>Sub Title here for Category</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row srow">
+                    <div class="col-md-6 col-lg-4 col-xl-3 cpadding">
+                        <a href="#" class="single-service-category text-center" data-aos="fade-up">
+                            <img src="img/service-icon-2.png" alt="">
+                            <h4>Development & IT</h4>
+                            <p>Complete your website UI design with gotlancer talents</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 cpadding">
+                        <a href="#" class="single-service-category text-center" data-aos="fade-up">
+                            <img src="img/service-icon-2.png" alt="">
+                            <h4>Design & Creative</h4>
+                            <p>Complete your website UI design with gotlancer talents</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 cpadding">
+                        <a href="#" class="single-service-category text-center" data-aos="fade-up">
+                            <img src="img/service-icon-2.png" alt="">
+                            <h4>Accounting &amp; Consulting</h4>
+                            <p>Complete your website UI design with gotlancer talents</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 cpadding">
+                        <a href="#" class="single-service-category text-center" data-aos="fade-up">
+                            <img src="img/service-icon-2.png" alt="">
+                            <h4>Admin Support</h4>
+                            <p>Complete your website UI design with gotlancer talents</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 cpadding">
+                        <a href="#" class="single-service-category text-center" data-aos="fade-up">
+                            <img src="img/service-icon-2.png" alt="">
+                            <h4>Customer Service</h4>
+                            <p>Complete your website UI design with gotlancer talents</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 cpadding">
+                        <a href="#" class="single-service-category text-center" data-aos="fade-up">
+                            <img src="img/service-icon-2.png" alt="">
+                            <h4>Engineering &amp; Architecture</h4>
+                            <p>Complete your website UI design with gotlancer talents</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 cpadding">
+                        <a href="#" class="single-service-category text-center" data-aos="fade-up">
+                            <img src="img/service-icon-2.png" alt="">
+                            <h4>Sales &amp; Marketing</h4>
+                            <p>Complete your website UI design with gotlancer talents</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 cpadding">
+                        <a href="#" class="single-service-category text-center" data-aos="fade-up">
+                            <img src="img/service-icon-2.png" alt="">
+                            <h4>Writing & Translation </h4>
+                            <p>Complete your website UI design with gotlancer talents</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="#" class="boxed-btn">View all caregory</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- services-category-area ends -->
+
+        <!-- find-area starts -->
+        <div class="find-area overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-1 order-lg-0" data-aos="fade-right">
+                        <div class="find-content">
+                            <div class="section-title">
+                                <h2>Looking for talent?</h2>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy<br/> text of the printing and typesetting<br/> industry Lorem Ipsum has been industry<br/> standard dummy text.</p>
+                            <a href="#" class="boxed-btn">Find freelancer </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <img src="img/find-banner.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- find-area ends -->
+
+        <!-- services-details-area starts -->
+        <div class="services-details-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div data-aos="fade-up">
+                            <div class="section-title text-center">
+                                <h2>Connect with in-demand professionals</h2>
+                            </div>
+                            <div class="service-type-section d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-between">
+                                <div class="single-service-type position-relative">
+                                    <img src="img/check.png" alt=""> Complex projects
+                                </div>
+                                <div class="single-service-type position-relative">
+                                    <img src="img/check.png" alt=""> Long-term contracts
+                                </div>
+                                <div class="single-service-type position-relative">
+                                    <img src="img/check.png" alt=""> Short-term jobs
+                                </div>
+                            </div><!-- service-type-section ends -->
+                        </div>
+                        <div class="deliverable-service-section" data-aos="fade-up">
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="section-title-2">Deliverable</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <ul>
+                                        <li><a href="#">Android Developer</a></li>
+                                        <li><a href="#">Bookkeeper</a></li>
+                                        <li><a href="#">Content Writer</a></li>
+                                        <li><a href="#">Copywriter</a></li>
+                                        <li><a href="#">Customer Service Representative</a></li>
+                                        <li><a href="#">Database Administrator</a></li>
+                                        <li><a href="#">Data Scientist</a></li>
+                                        <li><a href="#">Facebook Developer</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <ul>
+                                        <li><a href="#">Front-End Developer</a></li>
+                                        <li><a href="#">Game Developer</a></li>
+                                        <li><a href="#">Graphic Designer</a></li>
+                                        <li><a href="#">Information Security Analyst</a></li>
+                                        <li><a href="#">iOS Developer</a></li>
+                                        <li><a href="#">Java Developer</a></li>
+                                        <li><a href="#">JavaScript Developer</a></li>
+                                        <li><a href="#">Logo Designer</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <ul>
+                                        <li><a href="#">Mobile App Developer</a></li>
+                                        <li><a href="#">PHP Developer</a></li>
+                                        <li><a href="#">Python Developer</a></li>
+                                        <li><a href="#">Resume Writer</a></li>
+                                        <li><a href="#">Sales Consultant</a></li>
+                                        <li><a href="#">SEO Expert</a></li>
+                                        <li><a href="#">Social Media Manager</a></li>
+                                        <li><a href="#">Software Developer</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <ul>
+                                        <li><a href="#">Software Engineer</a></li>
+                                        <li><a href="#">Technical Writer</a></li>
+                                        <li><a href="#">UI Designer</a></li>
+                                        <li><a href="#">UX Designer</a></li>
+                                        <li><a href="#">Virtual Assistant</a></li>
+                                        <li><a href="#">Web Designer</a></li>
+                                        <li><a href="#">Wordpress Developer</a></li>
+                                        <li><a href="#">Writer</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- trending-skills-section ends -->
+                        <div class="trending-skills-section" data-aos="fade-up">
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="section-title-2">Trending skills</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <ul>
+                                        <li><a href="#">Apple UIKit</a></li>
+                                        <li><a href="#">Apple Xcode</a></li>
+                                        <li><a href="#">Articulate storyline</a></li>
+                                        <li><a href="#">Atlassian Confluence</a></li>
+                                        <li><a href="#">Blockchain</a></li>
+                                        <li><a href="#">Customer retention</a></li>
+                                        <li><a href="#">eLearning</a></li>
+                                        <li><a href="#">Enterprise Architecture</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <ul>
+                                        <li><a href="#">GitLab</a></li>
+                                        <li><a href="#">Go development</a></li>
+                                        <li><a href="#">Google App Engine API</a></li>
+                                        <li><a href="#">Google Cloud Platform</a></li>
+                                        <li><a href="#">Node.js</a></li>
+                                        <li><a href="#">Product Photography</a></li>
+                                        <li><a href="#">Rapid Prototyping</a></li>
+                                        <li><a href="#">Risk Management</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <ul>
+                                        <li><a href="#">Scala development</a></li>
+                                        <li><a href="#">SCORM</a></li>
+                                        <li><a href="#">Tensorflow</a></li>
+                                        <li><a href="#">Volusion</a></li>
+                                        <li><a href="#">Dropbox API</a></li>
+                                        <li><a href="#">iPhone UI design</a></li>
+                                        <li><a href="#">Genetic algorithms</a></li>
+                                        <li><a href="#">Vue.js</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <ul>
+                                        <li><a href="#">Social customer service</a></li>
+                                        <li><a href="#">HR consulting</a></li>
+                                        <li><a href="#">Oculus Rift</a></li>
+                                        <li><a href="#">Microsoft Power BI</a></li>
+                                        <li><a href="#">Proposal writing</a></li>
+                                        <li><a href="#">Vuforia</a></li>
+                                        <li><a href="#">Instructional design</a></li>
+                                        <li><a href="#">React.js</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- trending-skills-section ends -->
+                        <div class="services-section" data-aos="fade-up">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <a href="#" class="single-service-item text-center">
+                                        <span class="icon"><img src="img/service-icon-2.png" alt=""></span>
+                                        <h4>4.8/5 rating</h4>
+                                        <p>That’s our average customer rating from 37,317 reviews. Happy designers = happy customers.</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <a href="#" class="single-service-item text-center">
+                                        <span class="icon"><img src="img/service-icon-2.png" alt=""></span>
+                                        <h4>24/7 creativity</h4>
+                                        <p>Professional graphic designers available worldwide from Frankfurt to Frankston.</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <a href="#" class="single-service-item text-center">
+                                        <span class="icon"><img src="img/service-icon-2.png" alt=""></span>
+                                        <h4>100% love it</h4>
+                                        <p>Work with award winning designers and get a design you'll love.</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <a href="#" class="single-service-item text-center">
+                                        <span class="icon"><img src="img/service-icon-2.png" alt=""></span>
+                                        <h4>90+ categories</h4>
+                                        <p>Our talented community can design everything from an iOS app to a wine label.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- services-section ends -->
+                        <div class="contact-section text-center" data-aos="fade-up">
+                            <h2>Need to talk with experts?</h2>
+                            <p>Our awasome support team will guide you to complete your project.</p>
+                            <a href="#" class="boxed-btn">Lest's Chat</a>
+                        </div><!-- contact-section ends -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- services-details-area ends -->
+
+        <!-- footer-widgets-area starts -->
+        <div class="footer-widgets-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="single-footer-widget widget-1">
+                            <div class="footer-logo">
+                                <img src="img/white-logo.png" alt="gotlancer">
+                            </div>
+                            <div class="softwares">
+                                <a href="#"><img src="img/playstore.png" alt=""></a>
+                                <a href="#"><img src="img/appstore.png" alt=""></a>
+                            </div>
+                            <div class="language-dropdown">
+                                <select name="" id="">
+                                    <option value="">English</option>
+                                    <option value="">Hindi</option>
+                                    <option value="">Bengali</option>
+                                    <option value="">French</option>
+                                </select>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h4>Network</h4>
+                            <ul>
+                                <li><a href="#">Browse Categories</a></li>
+                                <li><a href="#">Browse Projects</a></li>
+                                <li><a href="#">Browse Freelancers</a></li>
+                                <li><a href="#">Browse Contest</a></li>
+                                <li><a href="#">Browse Offers</a></li>
+                                <li><a href="#">Escrow</a></li>
+                                <li><a href="#">Affiliate Program</a></li>
+                                <li><a href="#">Desktop App download</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Gotlancer Foundation</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Trust, Safety & Security</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Accessibility</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Code of Conduct</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h4>Freelancers</h4>
+                            <ul>
+                                <li><a href="#">Freelancers by Skill</a></li>
+                                <li><a href="#">Freelancers in USA</a></li>
+                                <li><a href="#">Freelancers in UK</a></li>
+                                <li><a href="#">Freelancers in Canada</a></li>
+                                <li><a href="#">Freelancers in Australia</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-widgets-area ends -->
+
+        <!-- footer-area starts -->
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center justify-content-start justify-content-center order-1 order-lg-0 copyright-text">
+                        <p>&copy; 2018 - 2020 Gotlancer® Gotlancer Pvt Ltd.</p>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center">
+                        <span>Follow us:</span>
+                        <div class="footer-social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-area ends -->
+
+        <a href="#" class="scrollTop d-none d-lg-block"><i class="fas fa-angle-up"></i></a>
+
+        <!--Libraries-->
+        <script src="js/bootstrap.bundle.min.js"></script>       
+
+        <!--Plugins-->
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/perfect-scrollbar.jquery.min.js"></script>
+
+        <!--Active & Custom JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>

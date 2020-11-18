@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>AfterLogin</title>
+        
+        <!--Libraries-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <!-- fonts -->
+        <link href="./webfonts/typo-fonts/fonts.css" rel="stylesheet">
+
+        <!--Plugins-->
+        <link href="css/aos.css" rel="stylesheet">
+        <link href="css/slick.css" rel="stylesheet">
+        <link href="css/nice-select.css" rel="stylesheet">
+        <link href="css/perfect-scrollbar.min.css" rel="stylesheet">
+
+        <!--Theme specific styles-->
+        <link href="css/style.css" rel="stylesheet">
+        
+        
+        <!--Core jQuery-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <body>
+
+        <div class="overlay"></div>
+
+        <!-- visible only below 991px viewports | small-devices-header starts -->
+        <div class="small-devices-header d-block d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo d-flex align-items-center">
+                            <a href="#"><img src="img/logo.svg" alt="Gotlancer"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                        <div class="message-box d-block d-lg-none position-relative">
+                            <a href="#">Inbox <span class="mnumber">5</span></a>
+                        </div>
+                        <div class="notification-box d-block d-lg-none position-relative">
+                            <a href="#"><i class="fas fa-bell"></i> <span class="nnumber">1</span></a>
+                        </div>
+                        <div class="mobile-menu-trigger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- small-devices-header ends -->
+
+        <!-- header-area starts -->
+        <div class="header header-style-2">
+            <div class="header-area">
+                <div class="mobile-menu-close-trigger d-block d-lg-none">
+                    <span class="bar-1"></span>
+                    <span class="bar-2"></span>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 d-flex flex-wrap flex-lg-nowrap order-1 order-lg-0">
+                            <div class="site-logo d-flex align-items-center order-0">
+                                <a href="#"><img src="img/logo.svg" alt="Gotlancer"></a>
+                            </div>
+                            <div class="mainmenu off-canvas-nav order-2 order-lg-1">
+                                <ul>
+                                    <li class="menu-item-has-children"><a href="#">Projects</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Find Work</a></li>
+                                            <li><a href="#">Saved Jobs</a></li>
+                                            <li><a href="#">Proposals</a></li>
+                                            <li><a href="#">My Stats</a></li>
+                                            <li><a href="#">My Project</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Hire</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Find Freelancer</a></li>
+                                            <li><a href="#">Saved Freelancer</a></li>
+                                            <li><a href="#">Hired Freelancer</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Reports</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Overview</a></li>
+                                            <li><a href="#">My Reports</a></li>
+                                            <li><a href="#">Proposal History</a></li>
+                                            <li><a href="#">Transaction History</a></li>
+                                            <li><a href="#">Payment History</a></li>
+                                            <li><a href="#">Withdrawal History</a></li>
+                                            <li><a href="#">Dispute List</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-block d-lg-none">
+                                        <a href="#">Logout</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Only visible below 991px -->
+                                <div class="mobile-content d-block d-lg-none">
+                                    <div class="available-status">
+                                        <button type="button" class="online active">Online <i class="fas fa-check"></i></button>
+                                        <button type="button" class="away">Away <i class="fas fa-check"></i></button>
+                                    </div>
+                                </div>
+                                <!-- Only visible below 991px -->
+                            </div>
+                            
+                            <div class="header-search-box d-none d-lg-block position-relative order-1 order-lg-2">
+                                <button id="search-box-trigger" class="search-box-trigger" type="button">
+                                    <i class="fas fa-search"></i> Search <span class="angle-icon">
+                                    <i class="fas fa-angle-down"></i></span>
+                                </button>
+                                <div id="search-box-wrapper" class="search-dropdown">
+                                    <div class="dropdown-header">
+                                        Buyers can
+                                    </div>
+                                    <div class="search-dropdown-item offers">
+                                        <a href="https://www.google.com/">Search <span class="standout">offers</span> <span class="helper">to buy now</span></a>
+                                    </div>
+                                    <div class="search-dropdown-item freelancers">
+                                        <a href="https://www.google.com/">Search <span class="standout">freelancers</span> <span class="helper">to request a proposal</span></a>
+                                    </div>
+                                    <div class="dropdown-header">
+                                        Freelancers can
+                                    </div>
+                                    <div class="search-dropdown-item projects">
+                                        <a href="https://www.google.com/">Search <span class="standout">projects</span> <span class="helper">to quote on</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="header-right-section d-flex justify-content-end align-items-center h-100">
+                                <div class="message-box d-none d-lg-block position-relative">
+                                    <a href="#">Inbox <span class="mnumber">5</span></a>
+                                </div>
+                                <div class="notification-box d-none d-lg-block position-relative">
+                                    <a href="#"><i class="fas fa-bell"></i> <span class="nnumber">1</span></a>
+                                </div>
+                                <div class="user-detail dropdown">
+                                    <div class="profile-tigger d-none d-lg-block" type="button" id="dropdownMenuButton" >
+                                        <img class="profile-image" src="img/user-1.svg" alt="">
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <div class="user-profile-info position-relative">
+                                            <img class="profile-image" src="img/user-1.svg" alt="">
+                                            <h3 class="username">Hi, Apurba</h3>
+                                            <h3 class="usertitle">Buyer</h3>
+                                        </div>
+                                        <div class="user-links">
+                                            <a href="https://google.com">Settings</a>
+                                            <a href="#Profile">My Profile</a>
+                                            <a href="#Profile">Membership</a>
+                                            <a href="#">Buy Bid Credit</a>
+                                            <a class="d-none d-lg-block" href="#">Logout</a>
+                                        </div>
+
+                                        <!-- Only visible below 991px -->
+                                        <div class="available-status d-none d-lg-block">
+                                            <button type="button" class="online active">Online <i class="fas fa-check"></i></button>
+                                            <button type="button" class="away">Away <i class="fas fa-check"></i></button>
+                                        </div>
+                                        <!-- Only visible below 991px -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header-area ends -->
+
+        <div class="divider d-block d-lg-none"></div>
+
+        <div class="container" style="">
+            <div class="row">
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rerum dolorem, quos incidunt quidem iure eligendi, beatae magnam quibusdam, soluta voluptatibus expedita asperiores sed impedit vero optio ea reprehenderit magni hic suscipit? Sint cum eum quae, aspernatur optio tempora explicabo quis dolorem accusantium natus voluptate eos atque sapiente magni? Recusandae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam harum ipsa error quaerat laborum quasi dignissimos doloremque velit itaque quis nisi accusantium praesentium, ad at enim nam alias est sunt nobis, quam molestias laudantium libero. Expedita praesentium aliquid ipsum! Fuga ipsum facere unde, odit a sit labore illo laudantium voluptas deleniti accusantium reprehenderit quidem eaque non dolorem ex sunt eos animi aliquam voluptates! Incidunt iure velit, hic sapiente ab, officia voluptatem officiis aliquam ipsum enim totam, dolorem quaerat debitis libero aut doloribus! Iusto, at odio. Numquam suscipit magni totam ut, corrupti impedit placeat laudantium perferendis, porro doloremque qui, libero vel!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque placeat molestiae porro magni autem officiis, dolore ipsum animi architecto iure omnis, sapiente praesentium incidunt nostrum ab assumenda ullam! Inventore, aspernatur nostrum modi ipsam et dicta cupiditate nulla quibusdam sit doloribus, natus ea incidunt quaerat consequatur amet sint minus. Vero, sint!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rerum dolorem, quos incidunt quidem iure eligendi, beatae magnam quibusdam, soluta voluptatibus expedita asperiores sed impedit vero optio ea reprehenderit magni hic suscipit? Sint cum eum quae, aspernatur optio tempora explicabo quis dolorem accusantium natus voluptate eos atque sapiente magni? Recusandae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam harum ipsa error quaerat laborum quasi dignissimos doloremque velit itaque quis nisi accusantium praesentium, ad at enim nam alias est sunt nobis, quam molestias laudantium libero. Expedita praesentium aliquid ipsum! Fuga ipsum facere unde, odit a sit labore illo laudantium voluptas deleniti accusantium reprehenderit quidem eaque non dolorem ex sunt eos animi aliquam voluptates! Incidunt iure velit, hic sapiente ab, officia voluptatem officiis aliquam ipsum enim totam, dolorem quaerat debitis libero aut doloribus! Iusto, at odio. Numquam suscipit magni totam ut, corrupti impedit placeat laudantium perferendis, porro doloremque qui, libero vel!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque placeat molestiae porro magni autem officiis, dolore ipsum animi architecto iure omnis, sapiente praesentium incidunt nostrum ab assumenda ullam! Inventore, aspernatur nostrum modi ipsam et dicta cupiditate nulla quibusdam sit doloribus, natus ea incidunt quaerat consequatur amet sint minus. Vero, sint!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer-widgets-area starts -->
+        <div class="footer-widgets-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="single-footer-widget widget-1">
+                            <div class="footer-logo">
+                                <img src="img/white-logo.png" alt="gotlancer">
+                            </div>
+                            <div class="softwares">
+                                <a href="#"><img src="img/playstore.png" alt=""></a>
+                                <a href="#"><img src="img/appstore.png" alt=""></a>
+                            </div>
+                            <div class="language-dropdown">
+                                <select name="" id="">
+                                    <option value="">English</option>
+                                    <option value="">Hindi</option>
+                                    <option value="">Bengali</option>
+                                    <option value="">French</option>
+                                </select>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h4>Network</h4>
+                            <ul>
+                                <li><a href="#">Browse Categories</a></li>
+                                <li><a href="#">Browse Projects</a></li>
+                                <li><a href="#">Browse Freelancers</a></li>
+                                <li><a href="#">Browse Contest</a></li>
+                                <li><a href="#">Browse Offers</a></li>
+                                <li><a href="#">Escrow</a></li>
+                                <li><a href="#">Affiliate Program</a></li>
+                                <li><a href="#">Desktop App download</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Gotlancer Foundation</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Trust, Safety & Security</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Accessibility</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Code of Conduct</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h4>Freelancers</h4>
+                            <ul>
+                                <li><a href="#">Freelancers by Skill</a></li>
+                                <li><a href="#">Freelancers in USA</a></li>
+                                <li><a href="#">Freelancers in UK</a></li>
+                                <li><a href="#">Freelancers in Canada</a></li>
+                                <li><a href="#">Freelancers in Australia</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-widgets-area ends -->
+
+        <!-- footer-area starts -->
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center justify-content-start justify-content-center order-1 order-lg-0 copyright-text">
+                        <p>&copy; 2018 - 2020 Gotlancer® Gotlancer Pvt Ltd.</p>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center">
+                        <span>Follow us:</span>
+                        <div class="footer-social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-area ends -->
+
+        <a href="#" class="scrollTop d-none d-lg-block"><i class="fas fa-angle-up"></i></a>
+
+        <!--Libraries-->
+        <script src="js/bootstrap.bundle.min.js"></script>       
+
+        <!--Plugins-->
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/perfect-scrollbar.jquery.min.js"></script>
+
+        <!--Active & Custom JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>

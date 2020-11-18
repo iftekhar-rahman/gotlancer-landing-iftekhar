@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Browse Freelancer</title>
+        
+        <!--Libraries-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <!-- fonts -->
+        <link href="./webfonts/typo-fonts/fonts.css" rel="stylesheet">
+
+        <!--Plugins-->
+        <link href="css/aos.css" rel="stylesheet">
+        <link href="css/slick.css" rel="stylesheet">
+        <link href="css/nice-select.css" rel="stylesheet">
+        <link href="css/perfect-scrollbar.min.css" rel="stylesheet">
+
+        <!--Theme specific styles-->
+        <link href="css/style.css" rel="stylesheet">
+        
+        
+        <!--Core jQuery-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <body>
+
+        <div class="overlay"></div>
+
+        <!-- visible only below 991px viewports | small-devices-header starts -->
+        <div class="small-devices-header d-block d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo d-flex align-items-center">
+                            <a href="#"><img src="img/logo.svg" alt="Gotlancer"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                        <div class="message-box d-block d-lg-none position-relative">
+                            <a href="#">Inbox <span class="mnumber">5</span></a>
+                        </div>
+                        <div class="notification-box d-block d-lg-none position-relative">
+                            <a href="#"><i class="fas fa-bell"></i> <span class="nnumber">1</span></a>
+                        </div>
+                        <div class="mobile-menu-trigger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- small-devices-header ends -->
+
+        <!-- header-area starts -->
+        <div class="header header-style-2">
+            <div class="header-area">
+                <div class="mobile-menu-close-trigger d-block d-lg-none">
+                    <span class="bar-1"></span>
+                    <span class="bar-2"></span>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 d-flex flex-wrap flex-lg-nowrap order-1 order-lg-0">
+                            <div class="site-logo d-flex align-items-center order-0">
+                                <a href="#"><img src="img/logo.svg" alt="Gotlancer"></a>
+                            </div>
+                            <div class="mainmenu off-canvas-nav order-2 order-lg-1">
+                                <ul>
+                                    <li class="menu-item-has-children"><a href="#">Projects</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Find Work</a></li>
+                                            <li><a href="#">Saved Jobs</a></li>
+                                            <li><a href="#">Proposals</a></li>
+                                            <li><a href="#">My Stats</a></li>
+                                            <li><a href="#">My Project</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Hire</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Find Freelancer</a></li>
+                                            <li><a href="#">Saved Freelancer</a></li>
+                                            <li><a href="#">Hired Freelancer</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Reports</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Overview</a></li>
+                                            <li><a href="#">My Reports</a></li>
+                                            <li><a href="#">Proposal History</a></li>
+                                            <li><a href="#">Transaction History</a></li>
+                                            <li><a href="#">Payment History</a></li>
+                                            <li><a href="#">Withdrawal History</a></li>
+                                            <li><a href="#">Dispute List</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-block d-lg-none">
+                                        <a href="#">Logout</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Only visible below 991px -->
+                                <div class="mobile-content d-block d-lg-none">
+                                    <div class="available-status">
+                                        <button type="button" class="online active">Online <i class="fas fa-check"></i></button>
+                                        <button type="button" class="away">Away <i class="fas fa-check"></i></button>
+                                    </div>
+                                </div>
+                                <!-- Only visible below 991px -->
+                            </div>
+                            
+                            <div class="header-search-box d-none d-lg-block position-relative order-1 order-lg-2">
+                                <button id="search-box-trigger" class="search-box-trigger" type="button">
+                                    <i class="fas fa-search"></i> Search <span class="angle-icon">
+                                    <i class="fas fa-angle-down"></i></span>
+                                </button>
+                                <div id="search-box-wrapper" class="search-dropdown">
+                                    <div class="dropdown-header">
+                                        Buyers can
+                                    </div>
+                                    <div class="search-dropdown-item offers">
+                                        <a href="https://www.google.com/">Search <span class="standout">offers</span> <span class="helper">to buy now</span></a>
+                                    </div>
+                                    <div class="search-dropdown-item freelancers">
+                                        <a href="https://www.google.com/">Search <span class="standout">freelancers</span> <span class="helper">to request a proposal</span></a>
+                                    </div>
+                                    <div class="dropdown-header">
+                                        Freelancers can
+                                    </div>
+                                    <div class="search-dropdown-item projects">
+                                        <a href="https://www.google.com/">Search <span class="standout">projects</span> <span class="helper">to quote on</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="header-right-section d-flex justify-content-end align-items-center h-100">
+                                <div class="message-box d-none d-lg-block position-relative">
+                                    <a href="#">Inbox <span class="mnumber">5</span></a>
+                                </div>
+                                <div class="notification-box d-none d-lg-block position-relative">
+                                    <a href="#"><i class="fas fa-bell"></i> <span class="nnumber">1</span></a>
+                                </div>
+                                <div class="user-detail dropdown">
+                                    <div class="profile-tigger d-none d-lg-block" type="button" id="dropdownMenuButton" >
+                                        <img class="profile-image" src="img/user-1.svg" alt="">
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <div class="user-profile-info position-relative">
+                                            <img class="profile-image" src="img/user-1.svg" alt="">
+                                            <h3 class="username">Hi, Apurba</h3>
+                                            <h3 class="usertitle">Buyer</h3>
+                                        </div>
+                                        <div class="user-links">
+                                            <a href="https://google.com">Settings</a>
+                                            <a href="#Profile">My Profile</a>
+                                            <a href="#Profile">Membership</a>
+                                            <a href="#">Buy Bid Credit</a>
+                                            <a class="d-none d-lg-block" href="#">Logout</a>
+                                        </div>
+
+                                        <!-- Only visible below 991px -->
+                                        <div class="available-status d-none d-lg-block">
+                                            <button type="button" class="online active">Online <i class="fas fa-check"></i></button>
+                                            <button type="button" class="away">Away <i class="fas fa-check"></i></button>
+                                        </div>
+                                        <!-- Only visible below 991px -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header-area ends -->
+
+        <div class="divider d-block d-lg-none"></div>
+
+        <div class="project-wrapper">
+            <!-- project-tab-content-area starts -->
+            <div class="project-tab-content-area browse-freelancer-section project-tabs-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <!-- sidebar starts -->
+                            <div class="sidebar">
+                                <!-- visible only below 991px viewport starts -->
+                                <div class="visible-on-small-device d-block d-lg-none">
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <div class="close-btn">
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- visible only below 991px viewport ends -->
+
+                                <!-- single-sidebar-item starts -->
+                                <div class="single-sidebar-item">
+                                    <h4>Select category</h4>
+                                    <form action="#">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="all" name="all" value="All">
+                                            <label for="all"> All</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="category1" name="category1" value="websitedevelopment">
+                                            <label for="category1"> Website Development</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="category2" name="category2" value="graphicdesign">
+                                            <label for="category2"> Graphic Design</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="category3" name="category3" value="digitalmarketing">
+                                            <label for="category3"> Digital Marketing</label>
+                                        </div>
+                                    </form>
+                                </div><!-- single-sidebar-item ends -->
+                                <!-- single-sidebar-item starts -->
+                                <div class="single-sidebar-item">
+                                    <h4>Select Sub-category</h4>
+                                    <form action="#">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="subcategory1" name="subcategory1" value="All">
+                                            <label for="subcategory1"> All</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="subcategory2" name="subcategory2" value="websitedevelopment">
+                                            <label for="subcategory2"> Website Development</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="subcategory3" name="subcategory3" value="graphicdesign">
+                                            <label for="subcategory3"> Graphic Design</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="subcategory4" name="subcategory4" value="digitalmarketing">
+                                            <label for="subcategory4"> Digital Marketing</label>
+                                        </div>
+                                    </form>
+                                </div><!-- single-sidebar-item ends -->
+                                <!-- single-sidebar-item starts -->
+                                <div class="single-sidebar-item">
+                                    <h4>Project Type</h4>
+                                    <form action="#">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="type1" name="type1" value="any">
+                                            <label for="type1"> Any</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="type2" name="type2" value="fixedprice">
+                                            <label for="type2"> Fixed Price</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="type3" name="type3" value="hourly">
+                                            <label for="type3"> Hourly</label>
+                                        </div>
+                                    </form>
+                                </div><!-- single-sidebar-item ends -->
+                                <!-- single-sidebar-item starts -->
+                                <div class="single-sidebar-item">
+                                    <h4>Selec Country</h4>
+                                    <form action="#">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="allcountry" name="allcountry" value="Country">
+                                            <label for="allcountry"> All Country</label>
+                                        </div>
+                                    </form>
+                                    <div class="selectr-dropdown-list">
+                                        <select name="" id="">
+                                            <option value="">United State</option>
+                                            <option value="">United Kingdom</option>
+                                            <option value="">Canada</option>
+                                            <option value="">French</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                            <option value="">New Zealand</option>
+                                        </select>
+                                    </div>
+                                </div><!-- single-sidebar-item ends -->
+                                <div class="single-sidebar-item">
+                                    <h4>Hourly Rate</h4>
+                                    <form action="#">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="anybudget" name="anybudget" value="anybudget">
+                                            <label for="anybudget"> Any</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="budget1" name="budget1" value="budget1">
+                                            <label for="budget1"> $10 to $100</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="budget2" name="budget2" value="budget2">
+                                            <label for="budget2"> $100 to $500</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="budget3" name="budget3" value="budget3">
+                                            <label for="budget3"> More then $500</label>
+                                        </div>
+                                    </form>
+                                </div><!-- single-sidebar-item ends -->
+                            </div>
+                            <!-- sidebar ends -->
+                        </div>
+                        <div class="col-lg-9">
+                            <!-- projects-top-bar starts -->
+                            <div class="projects-top-bar">
+                                <div class="row">
+                                    <div class="col d-flex">
+                                        <div class="project-search position-relative">
+                                            <form action="#">
+                                                <input type="text" placeholder="search freelancer/company" name="search">
+                                                <button type="submit"><i class="fas fa-search"></i></button>
+                                            </form>
+                                        </div>
+                                        <div class="sidebar-trigger position-relative d-block d-lg-none">
+                                            <span class="bar bar-1"></span>
+                                            <span class="bar bar-2"></span>
+                                            <span class="bar bar-3"></span>
+                                            <span class="menu-text">Menu</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="freelancers-applied jobs-found">
+                                <div class="applied-job"><span>45000</span> Freelancers found</div>
+                            </div>
+                            <!-- projects-top-bar ends -->
+                            <!-- single-proposal-item starts -->
+                            <div class="single-proposal-item browse-freelancer-item sopnsored position-relative">
+                                <span class="sopnsored-tag freelancer">Sponsored</span>
+                                <div class="proposal-content">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap">
+                                        <div class="user-thumb">
+                                            <span>
+                                                <img src="img/user-2.svg" alt="">
+                                                <div class="online-status"></div>
+                                            </span>
+                                        </div>
+                                        <div class="user-detail">
+                                            <div class="user-title">
+                                                <div class="d-flex">
+                                                    <h3>Greg Prickril <span class="user-mode"><i class="fas fa-check-circle"></i></span></h3>
+                                                    <h4 class="hightest-rated"><i class="fas fa-star"></i> Hightest rated</h4>
+                                                </div>
+                                                <div class="freelancer-skills">
+                                                    MEAN Stack (Angular | Vue.js | Laravel | Node) 
+                                                </div>
+                                                <h5>United State</h5>
+                                            </div>
+                                        </div>
+                                        <div class="user-rate d-flex flex-md-column d-lg-block">
+                                            <div class="user-rate-btn">
+                                                <a href="#" class="boxed-btn">Hire me</a>
+                                                <a href="#" class="boxed-btn contact-btn">Contact</a>
+                                            </div>
+                                            <div class="user-rate-title">
+                                                <h3>$10/hr</h3>
+                                                <h4>Hourly rate</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-skills">
+                                        <span>Augmented Reality (AR)</span>
+                                        <span>Virtual Reality (VR)</span>
+                                        <span>Unity3D</span>
+                                    </div>
+                                </div>
+                                <div class="proposal-footer d-flex flex-wrap flex-lg-nowrap">
+                                    <div class="single-footer one position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-dollar-sign"></i></span> Total Earning<br/> <span class="earnings">$25,000 USD</span>
+                                    </div>
+                                    <div class="single-footer hours position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-clock"></i></span> <div class="success-rate">
+                                            <p>Success Rate</p>
+                                            <div class="position-relative">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span class="progress-number">78%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer reviews position-relative">
+                                        <div><span class="absolute-icon"><i class="fas fa-star"></i></span> 55 Reviews</div>
+                                        <div class="stars">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer country position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-map-marker-alt"></i></span> Certificates 
+                                        <div class="certificates">
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer five d-flex align-items-center justify-content-start justify-content-lg-end">
+                                        <span class="heart-icon position-relative">
+                                            <span class="blank"><i class="far fa-heart"></i></span>
+                                            <span class="fill"><i class="fas fa-heart"></i></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-proposal-item ends -->
+                            <!-- single-proposal-item starts -->
+                            <div class="single-proposal-item browse-freelancer-item position-relative">
+                                <span class="sopnsored-tag freelancer">Sponsored</span>
+                                <div class="proposal-content">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap">
+                                        <div class="user-thumb">
+                                            <span>
+                                                <img src="img/user-2.svg" alt="">
+                                                <div class="online-status"></div>
+                                            </span>
+                                        </div>
+                                        <div class="user-detail">
+                                            <div class="user-title">
+                                                <div class="d-flex">
+                                                    <h3>Greg Prickril <span class="user-mode"><i class="fas fa-check-circle"></i></span></h3>
+                                                    <h4 class="top-rated-plus"><i class="fas fa-star"></i> Top rated plus</h4>
+                                                </div>
+                                                <div class="freelancer-skills">
+                                                    MEAN Stack (Angular | Vue.js | Laravel | Node) 
+                                                </div>
+                                                <h5>United State</h5>
+                                            </div>
+                                        </div>
+                                        <div class="user-rate d-flex flex-md-column d-lg-block">
+                                            <div class="user-rate-btn">
+                                                <a href="#" class="boxed-btn">Hire me</a>
+                                                <a href="#" class="boxed-btn contact-btn">Contact</a>
+                                            </div>
+                                            <div class="user-rate-title">
+                                                <h3>$10/hr</h3>
+                                                <h4>Hourly rate</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-skills">
+                                        <span>Augmented Reality (AR)</span>
+                                        <span>Virtual Reality (VR)</span>
+                                        <span>Unity3D</span>
+                                    </div>
+                                </div>
+                                <div class="proposal-footer d-flex flex-wrap flex-lg-nowrap">
+                                    <div class="single-footer one position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-dollar-sign"></i></span> Total Earning<br/> <span class="earnings">$25,000 USD</span>
+                                    </div>
+                                    <div class="single-footer hours position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-clock"></i></span> <div class="success-rate">
+                                            <p>Success Rate</p>
+                                            <div class="position-relative">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span class="progress-number">98%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer reviews position-relative">
+                                        <div><span class="absolute-icon"><i class="fas fa-star"></i></span> 55 Reviews</div>
+                                        <div class="stars">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer country position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-map-marker-alt"></i></span> Certificates 
+                                        <div class="certificates">
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer five d-flex align-items-center justify-content-start justify-content-lg-end">
+                                        <span class="heart-icon position-relative">
+                                            <span class="blank"><i class="far fa-heart"></i></span>
+                                            <span class="fill"><i class="fas fa-heart"></i></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-proposal-item ends -->
+                            <!-- single-proposal-item starts -->
+                            <div class="single-proposal-item browse-freelancer-item position-relative">
+                                <span class="sopnsored-tag freelancer">Sponsored</span>
+                                <div class="proposal-content">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap">
+                                        <div class="user-thumb">
+                                            <span>
+                                                <img src="img/user-2.svg" alt="">
+                                                <div class="online-status"></div>
+                                            </span>
+                                        </div>
+                                        <div class="user-detail">
+                                            <div class="user-title">
+                                                <div class="d-flex">
+                                                    <h3>Greg Prickril <span class="user-mode"><i class="fas fa-check-circle"></i></span></h3>
+                                                    <h4 class="top-rated"><i class="fas fa-star"></i> Top rated</h4>
+                                                </div>
+                                                <div class="freelancer-skills">
+                                                    MEAN Stack (Angular | Vue.js | Laravel | Node) 
+                                                </div>
+                                                <h5>United State</h5>
+                                            </div>
+                                        </div>
+                                        <div class="user-rate d-flex flex-md-column d-lg-block">
+                                            <div class="user-rate-btn">
+                                                <a href="#" class="boxed-btn">Hire me</a>
+                                                <a href="#" class="boxed-btn contact-btn">Contact</a>
+                                            </div>
+                                            <div class="user-rate-title">
+                                                <h3>$10/hr</h3>
+                                                <h4>Hourly rate</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-skills">
+                                        <span>Augmented Reality (AR)</span>
+                                        <span>Virtual Reality (VR)</span>
+                                        <span>Unity3D</span>
+                                    </div>
+                                </div>
+                                <div class="proposal-footer d-flex flex-wrap flex-lg-nowrap">
+                                    <div class="single-footer one position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-dollar-sign"></i></span> Total Earning<br/> <span class="earnings">$25,000 USD</span>
+                                    </div>
+                                    <div class="single-footer hours position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-clock"></i></span> <div class="success-rate">
+                                            <p>Success Rate</p>
+                                            <div class="position-relative">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span class="progress-number">98%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer reviews position-relative">
+                                        <div><span class="absolute-icon"><i class="fas fa-star"></i></span> 55 Reviews</div>
+                                        <div class="stars">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer country position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-map-marker-alt"></i></span> Certificates 
+                                        <div class="certificates">
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer five d-flex align-items-center justify-content-start justify-content-lg-end">
+                                        <span class="heart-icon position-relative">
+                                            <span class="blank"><i class="far fa-heart"></i></span>
+                                            <span class="fill"><i class="fas fa-heart"></i></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-proposal-item ends -->
+                            <!-- single-proposal-item starts -->
+                            <div class="single-proposal-item browse-freelancer-item position-relative">
+                                <span class="sopnsored-tag freelancer">Sponsored</span>
+                                <div class="proposal-content">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap">
+                                        <div class="user-thumb">
+                                            <span>
+                                                <img src="img/user-2.svg" alt="">
+                                                <div class="online-status"></div>
+                                            </span>
+                                        </div>
+                                        <div class="user-detail">
+                                            <div class="user-title">
+                                                <div class="d-flex">
+                                                    <h3>Greg Prickril <span class="user-mode"><i class="fas fa-check-circle"></i></span></h3>
+                                                    <h4><i class="fas fa-star"></i> Rising talent</h4>
+                                                </div>
+                                                <div class="freelancer-skills">
+                                                    MEAN Stack (Angular | Vue.js | Laravel | Node) 
+                                                </div>
+                                                <h5>United State</h5>
+                                            </div>
+                                        </div>
+                                        <div class="user-rate d-flex flex-md-column d-lg-block">
+                                            <div class="user-rate-btn">
+                                                <a href="#" class="boxed-btn">Hire me</a>
+                                                <a href="#" class="boxed-btn contact-btn">Contact</a>
+                                            </div>
+                                            <div class="user-rate-title">
+                                                <h3>$10/hr</h3>
+                                                <h4>Hourly rate</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-skills">
+                                        <span>Augmented Reality (AR)</span>
+                                        <span>Virtual Reality (VR)</span>
+                                        <span>Unity3D</span>
+                                    </div>
+                                </div>
+                                <div class="proposal-footer d-flex flex-wrap flex-lg-nowrap">
+                                    <div class="single-footer one position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-dollar-sign"></i></span> Total Earning<br/> <span class="earnings">$25,000 USD</span>
+                                    </div>
+                                    <div class="single-footer hours position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-clock"></i></span> <div class="success-rate">
+                                            <p>Success Rate</p>
+                                            <div class="position-relative">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span class="progress-number">78%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer reviews position-relative">
+                                        <div><span class="absolute-icon"><i class="fas fa-star"></i></span> 55 Reviews</div>
+                                        <div class="stars">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer country position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-map-marker-alt"></i></span> Certificates 
+                                        <div class="certificates">
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer five d-flex align-items-center justify-content-start justify-content-lg-end">
+                                        <span class="heart-icon position-relative">
+                                            <span class="blank"><i class="far fa-heart"></i></span>
+                                            <span class="fill"><i class="fas fa-heart"></i></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-proposal-item ends -->
+                            <!-- single-proposal-item starts -->
+                            <div class="single-proposal-item browse-freelancer-item position-relative">
+                                <div class="proposal-content">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap">
+                                        <div class="user-thumb">
+                                            <span>
+                                                <img src="img/user-2.svg" alt="">
+                                                <div class="online-status offline"></div>
+                                            </span>
+                                        </div>
+                                        <div class="user-detail">
+                                            <div class="user-title">
+                                                <div class="d-flex">
+                                                    <h3>Greg Prickril <span class="user-mode"></span></h3>
+                                                    <!-- <h4><i class="fas fa-star"></i> Rising talent</h4> -->
+                                                </div>
+                                                <div class="freelancer-skills">
+                                                    MEAN Stack (Angular | Vue.js | Laravel | Node) 
+                                                </div>
+                                                <h5>United State</h5>
+                                            </div>
+                                        </div>
+                                        <div class="user-rate d-flex flex-md-column d-lg-block">
+                                            <div class="user-rate-btn">
+                                                <a href="#" class="boxed-btn">Hire me</a>
+                                                <a href="#" class="boxed-btn contact-btn">Contact</a>
+                                            </div>
+                                            <div class="user-rate-title">
+                                                <h3>$10/hr</h3>
+                                                <h4>Hourly rate</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-skills">
+                                        <span>Augmented Reality (AR)</span>
+                                        <span>Virtual Reality (VR)</span>
+                                        <span>Unity3D</span>
+                                    </div>
+                                </div>
+                                <div class="proposal-footer d-flex flex-wrap flex-lg-nowrap">
+                                    <div class="single-footer one position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-dollar-sign"></i></span> Total Earning<br/> <span class="earnings">$25,000 USD</span>
+                                    </div>
+                                    <div class="single-footer hours position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-clock"></i></span> <div class="success-rate">
+                                            <p>Success Rate</p>
+                                            <div class="position-relative">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span class="progress-number">78%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer reviews position-relative">
+                                        <div><span class="absolute-icon"><i class="fas fa-star"></i></span> 55 Reviews</div>
+                                        <div class="stars">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer country position-relative">
+                                        <span class="absolute-icon"><i class="fas fa-map-marker-alt"></i></span> Certificates 
+                                        <div class="certificates">
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                            <span><img src="img/certificate-1.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="single-footer five d-flex align-items-center justify-content-start justify-content-lg-end">
+                                        <span class="heart-icon position-relative">
+                                            <span class="blank"><i class="far fa-heart"></i></span>
+                                            <span class="fill"><i class="fas fa-heart"></i></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-proposal-item ends -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- project-tab-content-area ends -->
+        </div>
+
+        <!-- footer-widgets-area starts -->
+        <div class="footer-widgets-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="single-footer-widget widget-1">
+                            <div class="footer-logo">
+                                <img src="img/white-logo.png" alt="gotlancer">
+                            </div>
+                            <div class="softwares">
+                                <a href="#"><img src="img/playstore.png" alt=""></a>
+                                <a href="#"><img src="img/appstore.png" alt=""></a>
+                            </div>
+                            <div class="language-dropdown">
+                                <select name="" id="">
+                                    <option value="">English</option>
+                                    <option value="">Hindi</option>
+                                    <option value="">Bengali</option>
+                                    <option value="">French</option>
+                                </select>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h4>Network</h4>
+                            <ul>
+                                <li><a href="#">Browse Categories</a></li>
+                                <li><a href="#">Browse Projects</a></li>
+                                <li><a href="#">Browse Freelancers</a></li>
+                                <li><a href="#">Browse Contest</a></li>
+                                <li><a href="#">Browse Offers</a></li>
+                                <li><a href="#">Escrow</a></li>
+                                <li><a href="#">Affiliate Program</a></li>
+                                <li><a href="#">Desktop App download</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Gotlancer Foundation</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Trust, Safety & Security</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Accessibility</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Code of Conduct</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h4>Freelancers</h4>
+                            <ul>
+                                <li><a href="#">Freelancers by Skill</a></li>
+                                <li><a href="#">Freelancers in USA</a></li>
+                                <li><a href="#">Freelancers in UK</a></li>
+                                <li><a href="#">Freelancers in Canada</a></li>
+                                <li><a href="#">Freelancers in Australia</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-widgets-area ends -->
+
+        <!-- footer-area starts -->
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center justify-content-start justify-content-center order-1 order-lg-0 copyright-text">
+                        <p>&copy; 2018 - 2020 Gotlancer® Gotlancer Pvt Ltd.</p>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center">
+                        <span>Follow us:</span>
+                        <div class="footer-social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-area ends -->
+
+        <a href="#" class="scrollTop d-none d-lg-block"><i class="fas fa-angle-up"></i></a>
+
+        <!--Libraries-->
+        <script src="js/bootstrap.bundle.min.js"></script>       
+
+        <!--Plugins-->
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/perfect-scrollbar.jquery.min.js"></script>
+
+        <!--Active & Custom JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>

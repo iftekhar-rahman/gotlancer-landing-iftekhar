@@ -1,0 +1,121 @@
+// .sidebar
+.sidebar {
+    transition: all .5s ease;
+    @include all-below-med{
+        position: fixed;
+        left: -320px;
+        top: 0;
+        background: #fff;
+        z-index: 9999999;
+        width: 320px;
+        height: 100%;
+    }
+    .boxed-btn.milestone {
+        width: 100%;
+        margin-bottom: 15px;
+        height: 54px;
+        line-height: 48px;
+        &:hover {
+            @extend %secondary-bg-color;
+            @extend %secondary-border-color;
+            color: #fff;
+        }
+    }
+    ul {
+        li {
+            position: relative;
+            @include all-below-med{
+                border-bottom: 1px solid #E6E6E6;
+            }
+            a {
+                color: #485E76;
+                font-size: 13px;
+                font-weight: 500;
+                border-radius: 10px;
+                width: 100%;
+                padding: 18px 20px 18px 70px;
+                @extend %basetransition1;
+                @include all-below-med{
+                    padding: 14px 20px 14px 50px;
+                }
+                i {
+                    position: absolute;
+                    left: 37px;
+                    top: 50%;
+                    transform: translate(0px, -50%);
+                    font-size: 18px;
+                    @include all-below-med{
+                        left: 18px;
+                    }
+                }
+            }
+            &:hover {
+                a {
+                    background-color: #fff;
+                    @extend %primary-color;
+                }
+            }
+        }
+    }
+    &.active{
+        left: 0;
+    }
+    //.single-sidebar-item
+    .single-sidebar-item {
+        margin-bottom: 15px;
+        h4 {
+            color: #314963;
+            font-size: 15px;
+            margin-bottom: 20px;
+            @include all-below-med{
+                margin-bottom: 15px;
+            }
+        }
+        .form-check {
+            padding-left: 0;
+            label {
+                color: #485E76;
+                font-size: 14px;
+                font-weight: 400;
+                margin: 0 0 15px;
+            }
+        }
+    }
+}
+
+
+
+.sopnsored-tag {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: #EDB742;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    border-radius: 0 3px 3px 0;
+}
+
+.project-tab-content-area{
+    &.project-tabs-section {
+        @include all-below-med{
+            .sidebar{
+                left: auto;
+                right: -320px;
+                padding-left: 20px;
+                padding-right: 20px;
+                overflow-y: scroll;
+                &.active{
+                    right: 0;
+                }
+                .visible-on-small-device {
+                    padding: 5px 0px 5px 15px;
+                    border-bottom: 0;
+                    margin-right: -10px;
+                }
+                
+            }
+        }
+    }
+}

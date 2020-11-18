@@ -1,0 +1,283 @@
+
+.project-tab-content-area.browse-freelancer-section{
+    .single-proposal-item.browse-freelancer-item {
+        .proposal-content {
+            padding: 30px 20px 12px;
+            @include all-mx-mobile{
+                padding: 30px 10px 12px;
+            }
+            .user-thumb {
+                flex-basis: 135px;
+                @include all-below-med{
+                    flex-basis: 120px;
+                }
+                @include all-below-mobile-lg{
+                    flex-basis: 23%;
+                }
+                img{
+                    max-width: 100px;
+                    @include all-below-mobile-lg{
+                        max-width: 70px;
+                    }
+                }
+                span{
+                    position: relative;
+                    display: inline-block;
+                }
+            }
+            .user-detail{
+                flex-basis: 460px;
+                @include all-below-med{
+                    flex-basis: 360px;
+                }
+                @include all-below-mobile-lg{
+                    flex-basis: 77%;
+                }
+                h3 {
+                    .user-mode {
+                        margin-left: 7px;
+                        @include all-mx-mobile{
+                            margin-left: 0;
+                        }
+                        i {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .user-title{
+                    @include all-below-med{
+                        position: relative;
+                        left: 0;
+                        top: 0;
+                    }
+                    .freelancer-skills {
+                        color: #333333;
+                        margin: 0 0 2px;
+                    }
+                    h4 {
+                        color: #6FB556;
+                        font-size: 12px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        position: relative;
+                        padding-left: 25px;
+                        margin: 4px 0 0 8px;
+                        @include all-mx-mobile{
+                            margin: 4px 0 0 0px;
+                            padding-left: 17px;
+                        }
+                        i {
+                            font-size: 16px;
+                            position: absolute;
+                            left: 0;
+                            top: -2px;
+                            @include all-mx-mobile{
+                                font-size: 14px;
+                                top: -1px;
+                            }
+                        }
+                    }
+                    .hightest-rated {
+                        color: #EDB742;
+                    }
+                    .top-rated-plus {
+                        color: #8EA4BC;
+                    }
+                    .top-rated {
+                        color: #485E76;
+                    }
+                }
+            }
+            .user-rate {
+                flex-basis: 190px;
+                @include all-below-med{
+                    flex-basis: 170px;
+                }
+                @include all-below-mobile-lg{
+                    flex-basis: 100%;
+                    margin: 10px 0 10px;
+                    .user-rate-title{
+                        margin-right: 15px;
+                    }
+                }
+                .user-rate-btn {
+                    margin-bottom: 20px;
+                    @include all-below-med{
+                        margin: 15px 0 15px;
+                    }
+                    @include all-below-mobile-lg{
+                        margin: 10px 0 0 10px;
+                    }
+                }
+                h3{
+                    text-transform: lowercase;
+                    margin: 0 0 5px;
+                }
+                h4 {
+                    font-size: 12px;
+                    margin: 0 0 0px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+                .boxed-btn{
+                    height: 27px;
+                    line-height: 24px;
+                    padding: 0px 14px;
+                    @extend %secondary-bg-color;
+                    @include mx-desktops{
+                        padding: 0px 10px;
+                    }
+                    &:hover{
+                        @extend %primary-border-color;
+                        @extend %primary-bg-color;
+                    }
+                    &.contact-btn{
+                        background: #E3EAF4;
+                        color: #485E76;
+                        &:hover{
+                            @extend %secondary-border-color;
+                            @extend %secondary-bg-color;
+                            @extend %white-color;
+                        }
+                    }
+                }
+            }
+            .user-skills {
+                width: 460px;
+                margin-left: 135px;
+                margin-top: -16px;
+                @include mx-desktops{
+                    margin-left: 112px;
+                    width: 370px;
+                }
+                @include all-below-med{
+                    margin-left: 120px;
+                    width: 520px;
+                    margin-top: -10px;
+                }
+                @include all-below-mobile-lg{
+                    margin-left: 0;
+                    width: auto;
+                    margin-top: 0;
+                    span{
+                        margin-bottom: 5px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .sopnsored-tag.freelancer {
+            top: 0;
+            background: #74B95C;
+            padding: 3px 15px;
+            font-size: 14px;
+            border-radius: 7px 0px 7px 0px;
+        }
+        .proposal-footer {
+            .single-footer{
+                @include all-below-med{
+                    margin: 5px 0;
+                }
+                .absolute-icon {
+                    top: 5px;
+                    width: 28px;
+                    height: 28px;
+                    line-height: 28px;
+                    font-size: 15px;
+                }
+                &.one {
+                    width: 190px;
+                    @include all-below-med{
+                        width: 33.3333%;
+                    }
+                    @include all-below-mobile-lg{
+                        width: 49%;
+                    }
+                    .earnings {
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 1;
+                    }
+                }
+                &.hours {
+                    width: 220px;
+                    @include all-below-med{
+                        width: 33.3333%;
+                    }
+                    @include all-below-mobile-lg{
+                        width: 51%;
+                    }
+                }
+                &.reviews {
+                    width: 155px;
+                    @include all-below-med{
+                        width: 33.3333%;
+                    }
+                    @include all-below-mobile-lg{
+                        width: 49%;
+                    }
+                }
+                &.country{
+                    @include all-below-med{
+                        width: 33.3333%;
+                    }
+                    @include all-below-mobile-lg{
+                        width: 51%;
+                    }
+                }
+                &.five {
+                    width: 70px;
+                    @include mx-desktops{
+                        width: 45px;
+                    }
+                    @include all-below-med{
+                        width: 33.3333%;
+                    }
+                    @include all-below-mobile-lg{
+                        width: 49%;
+                        .heart-icon{
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .success-rate {
+                    margin-top: 3px;
+                    font-size: 13px;
+                    @include all-below-med{
+                        width: 100%;
+                    }
+                    .progress {
+                        height: 6px;
+                        width: 120px;
+                        @include mx-desktops{
+                            width: 110px;
+                        }
+                        @include all-mx-mobile{
+                            width: 95px;
+                        }
+                    }
+                    .progress-number {
+                        left: 125px;
+                        top: -6px;
+                        right: auto;
+                        @include mx-desktops{
+                            left: 120px;
+                        }
+                        @include all-mx-mobile{
+                            left: 105px;
+                        }
+                    }
+                }
+                .certificates {
+                    img {
+                        max-width: 18px;
+                        margin-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

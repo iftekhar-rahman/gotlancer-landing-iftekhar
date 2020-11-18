@@ -1,0 +1,43 @@
+// ======================================
+//  Partial Imports
+// ======================================
+
+// External 
+// @import "external/_bootstrap.min.scss";
+// @import "external/_all.min.scss";
+// @import "external/_nice-select.scss";
+// @import "external/_aos.scss";
+// @import "external/_slick.scss";
+
+// Utilities
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+@import 'helpers/mediaquery';
+
+// Base fonts
+@import 'base/fonts';
+
+// Base Styles
+@import 'base/reset';
+@import 'base/common';
+
+// Layout Styles
+@import 'components/header';
+@import 'components/footer';
+
+// Components Styles
+@import 'components/button';
+@import 'components/color'; 
+
+// Pages Styles
+@import 'pages/home';
+@import 'pages/afterlogin';
+@import 'pages/sidebar';
+@import 'pages/browse-project';
+@import 'pages/browse-project-final';
+@import 'pages/browse-freelancer';
+
+
+
+

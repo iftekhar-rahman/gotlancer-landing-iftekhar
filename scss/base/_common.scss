@@ -1,0 +1,300 @@
+/*==============Common CSS===================*/
+
+body {
+    font-family: $body-font;
+    color: $body-color;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 600;
+}
+p {
+    &:last-child{
+    	margin-bottom: 0;
+    }
+}
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
+    border-radius: 5px;
+    height: 40px;
+    padding: 7px 10px;
+    border: 1px solid #E7ECF2;
+    transition: all .3s ease;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=url]:focus, textarea:focus{
+    @extend %primary-border-color;
+}
+input[type=submit], button[type=submit]{
+    cursor: pointer;
+}
+input, textarea{
+	@include placeholder{
+		color: $body-color;
+	}
+}
+input[type=submit], button[type=submit]{
+    &:hover{
+        
+    }
+}
+textarea {
+    height: 150px;
+    padding: 10px 20px;
+    width: 100%;
+    // margin-bottom: -7px;
+    border-color: #ced4da;
+    transition: all .3s ease;
+    &:focus {
+        @extend %primary-border-color;
+    }
+    &:hover {
+        @extend %primary-border-color;
+    }
+}
+.dropdown-menu {
+    border-color: #E7ECF2;
+}
+.dropdown-item.active, .dropdown-item:hover {
+    @extend %primary-color;
+    text-decoration: none;
+    background-color: #F9F9F9;
+}
+.dropdown-item {
+    transition: all .3s ease;
+    font-size: 14px;
+    padding: 6px 15px;
+    color: #314963;
+    font-weight: 400;
+}
+.divider{
+    height: 70px;
+}
+/*========.section-title=========*/ 
+.section-title {
+    h2{
+        color: #314963;
+        font-size: 48px;
+        @include mx-desktops{
+            font-size: 42px;
+        }
+        @include all-below-med{
+            font-size: 38px;
+        }
+        @include all-below-mobile-lg{
+            font-size: 30px;
+        }
+    }
+    h4{
+        color: #314963; 
+        font-size: 22px;
+        font-weight: 500;
+        @include all-below-med{
+            font-size: 18px;
+        }
+    }
+}
+.section-title-2{
+    color: #485E76;
+    font-size: 32px;
+    @include all-below-med{
+        font-size: 28px;
+    }
+    @include all-below-mobile-lg{
+        font-size: 26px;
+    }
+}
+// .section-padding{
+//     padding: 50px 0;
+// }
+/*======.owl-dots customization=======*/
+// .owl-dots {
+//     @extend %textcenter;
+//     div {
+//         height: 5px;
+//         width: 5px;
+//         background-color: #BBBBBB;
+//         display: inline-block;
+//         margin: 0 5px;
+//         border-radius: 50%;
+//         &.active {
+//             @extend %primary-bg-color;
+//         }
+//     }
+// }
+    
+/*=====owl nav customization======*/
+// .owl-nav div {
+//     @extend %displayinline;
+//     @extend %posabsolute;
+//     left: -10px;
+//     top: 50%;
+//     color: #2A7D2E;
+//     background-color: #fff;
+//     line-height: 60px;
+//     margin-top: -30px;
+//     width: 60px;
+//     height: 60px;
+//     font-size: 45px;
+//     padding-right: 5px;
+//     @extend %borderradius50;
+//     @extend %textcenter;
+//     @extend %basetransition1;
+//     &.owl-next {
+//         left: auto;
+//         right: -10px;
+//         padding-left: 5px;
+//         padding-right: 0;
+//     }
+//     &:hover {
+//         color: #ffffff;
+//         background-color: #2A7D2E;
+//     }
+// }
+
+// select {
+//     font-size: 19px;
+//     color: #0da0f4;
+//     background-color: #fff;
+//     padding: 8px 10px;
+// }
+
+/*========.nice-select=============*/ 
+.selectr-dropdown-list {
+    height: 30px;
+}
+.nice-select {
+    width: 100%;
+    border-radius: 3px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border-color: #CCCCCC;
+    color: #485E76;
+    font-size: 13px;
+    .list {
+        width: 100%;
+        box-shadow: none;
+        border: 1px solid #E6E6E6;
+        max-height: 333px;
+        .option {
+            line-height: 30px;
+            min-height: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 0;
+        }
+    }
+    &:focus {
+        @extend %primary-border-color;
+    }
+    &:hover {
+        @extend %primary-border-color;
+    }
+    &:after{
+        right: 13px;
+        border-color: #8A92A3;
+        width: 8px;
+        height: 8px;
+        margin-top: -5px;
+    }
+    &:hover:after {
+        @extend %primary-border-color;
+    }
+}
+.online-status {
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    width: 24px;
+    height: 24px;
+    @extend %primary-bg-color;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    &.offline{
+        background-color: #CCCCCC;
+    }
+}
+
+
+/*========== default checkbox style =============*/
+input[type=checkbox]{
+    display:none;
+}
+input[type=checkbox] + label:before {
+    border: 1px solid#CCCCCC;
+    content: "";
+    display: inline-block;
+    font-size: 30px;
+    height: 18px;
+    width: 18px;
+    line-height: 11px;
+    margin: -2px 5px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    background-color: #fff;
+}
+input[type=checkbox]:checked + label:before {
+    content: "";
+    // font-family: "Font Awesome 5 Free";
+    // @extend %primary-color;
+    @extend %primary-bg-color;
+    @extend %primary-border-color;
+    font-size: 15px;
+    padding-top: 4px;
+    background-image: url(../img/check.svg);
+    background-position: 4px 5px;
+    background-repeat: no-repeat;
+}
+label {
+    margin-right: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+/*========== default radio button style =============*/
+// input[type=radio]{
+//     display:none;
+// }
+// input[type=radio] + label:before {
+//     border: 1px solid rgb(255, 255, 255);
+//     content: "";
+//     display: inline-block;
+//     font-size: 30px;
+//     height: 20px;
+//     line-height: 11px;
+//     margin: -4px 5px 0 0;
+//     text-align: center;
+//     vertical-align: middle;
+//     width: 20px;
+//     border-radius: 50%;
+//     background-color: #fff;
+// }
+// input[type=radio]:checked + label:before {
+//     content: "\f00c";
+//     font-family: fontawesome;
+//     color: #0F4A6E;
+//     font-size: 15px;
+//     padding-top: 4px;
+// }
+// label{
+//     @extend %body-color;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
